@@ -4,13 +4,36 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body{
       font-family: 'EB Garamond', garamond, serif;
       font-size: 1.3em;
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+      font-size: 2em;
+    }
+    h2{
+      margin: 0;
+      font-size: 1em;
+    }
+    .jumbotron{
+      height: 100vh;
+      background-image: url(img/hedgehog.jpg);
+      background-size: cover;
+      background-position: left center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .jumbotron img{
+      width: 50px;
+      height: 50px;
     }
     .container{
-      max-width: 800px;
+      max-width: 1200px;
+      padding: 3%;
       margin: 0 auto;
     }
 
@@ -33,9 +56,6 @@
       padding: 0;
       transition: all .6s ease;
     }
-    ul{
-      list-style-type: "-";
-    }
     h1{ margin: 0;}
     header{
       margin-top: 50px;
@@ -56,33 +76,61 @@ vertical-align: baseline;
       color: rgb(84, 84, 84);
     }
 
+    #skills ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    #skills ul li{
+      display: inline;
+      padding:25px;
+    }
+    #skills ul li img{
+      vertical-align: middle;
+      width: 20%;
+      height: 20%;
+    }
+    .social{
+      position: absolute;
+      bottom: 10px;
+    }
+    .jumbotron p{
+      line-height: 1.5em;
+      min-width: 250px;
+      max-width: 25%;
+      color: black;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1><a href="">James Bubb</a></h1>
-      <ul class="links">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li class="line"></li>
-      </ul>
+  <section class="jumbotron">
+    <div class="container">
+      <h1>James Bubb </h1>
+      <p>Hi, i'm James and I do stuff with the web. I have a diverse range of skills from HTML, CSS and JavaScript to Angular, NodeJS and Linux administration. </p>
 
-    </header>
-    <div class="page" id="intro">
-      <h2>Full Stack Developer</h2>
-      <p>I am a passionate Full Stack Developer who relishes challenges and opportunities.</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/james-bubb-40753142"><img src="img/sm/Linkedin.png" alt=""></a>
+      <a href="https://github.com/codebubb"><img src="img/sm/Github.png" alt=""></a>
+      <a href="https://twitter.com/codebubb"><img src="img/sm/Twitter.png" alt=""></a>
     </div>
+  </div>
+  </section>
+  <div class="container">
+
+
     <div class="page" id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>NodeJS</li>
-        <li>express</li>
-        <li>NoSQL - MongoDB / Mongoose</li>
-        <li>Git version control</li>
-        <li>Photoshop</li>
+        <li><img src="img/html5.png" alt=""></li>
+        <li><img src="img/css.png" alt=""></li>
+        <li><img src="img/js.png" alt=""></li>
+        <li><img src="img/jquery.gif" alt=""></li>
+        <li><img src="img/angular.png" alt=""></li>
+        <li><img src="img/sass.png" alt=""></li>
+        <li><img src="img/photoshop.png" alt=""></li>
+        <li><img src="img/nodejs.png" alt=""></li>
+        <li><img src="img/expressjs.png" alt=""></li>
+        <li><img src="img/mongodb.jpeg" alt=""></li>
 
       </ul>
     </div>
