@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <style>
+    body{
+      font-family: 'EB Garamond', garamond, serif;
+      font-size: 1.3em;
+    }
+    .container{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    ul.links{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.links li{
+      font-size: 1.4em;
+      display:inline-block;
+      padding: 0 30px;
+    }
+    ul.links .line{
+      border-bottom: 2px solid black;
+      display: block;
+      width: 0;
+      margin-top: 5px;
+      position: relative;
+      padding: 0;
+      transition: all .6s ease;
+    }
+    ul{
+      list-style-type: "-";
+    }
+    h1{ margin: 0;}
+    header{
+      margin-top: 50px;
+    }
+    header * {
+      display: inline-block;
+
+    }
+    .links{
+      float: right;
+vertical-align: baseline;
+    }
+    a{
+      color: rgb(64, 64, 64);
+      text-decoration: none;
+    }
+    a:hover{
+      color: rgb(84, 84, 84);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="">James Bubb</a></h1>
+      <ul class="links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li class="line"></li>
+      </ul>
+
+    </header>
+    <div class="page" id="intro">
+      <h2>Full Stack Developer</h2>
+      <p>I am a passionate Full Stack Developer who relishes challenges and opportunities.</p>
+    </div>
+    <div class="page" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>NodeJS</li>
+        <li>express</li>
+        <li>NoSQL - MongoDB / Mongoose</li>
+        <li>Git version control</li>
+        <li>Photoshop</li>
+
+      </ul>
+    </div>
+    <div class="page" id="projects">
+      <h2>Projects</h2>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consectetur ab labore illum provident, repudiandae quae iusto, rem voluptas, voluptatibus facilis odio quam a! Et, debitis, voluptates! Quaerat ipsam, dolores!</div>
+      <div>Harum aut nulla commodi, pariatur, illo soluta. Nisi saepe at nam eos cumque blanditiis quasi, mollitia, delectus deleniti dolor vero natus repellendus reiciendis culpa quod veniam hic qui quidem! Ut.</div>
+      <div>Facere, minima, tempora. Tempora earum iure deleniti doloremque! Dolores deserunt sapiente quos nulla natus maxime nisi neque odio ipsam explicabo, exercitationem deleniti quaerat, laudantium aspernatur voluptate sed nostrum velit provident.</div>
+    </div>
+    <div class="page" id="blog">
+      <h2>Blog</h2>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, possimus dolor! Ducimus dolores animi nihil odio adipisci sapiente quae ad obcaecati veritatis necessitatibus facere, aperiam dignissimos mollitia a in numquam?</div>
+      <div>Est illum beatae voluptates ex ratione ullam doloribus dolore non? Minus exercitationem consequuntur nam recusandae culpa debitis corrupti, voluptate rem deserunt adipisci quod non sunt! Excepturi consequuntur sequi facilis minima.</div>
+      <div>Iste labore eligendi itaque voluptatem, molestias assumenda suscipit fugiat voluptate optio officia facilis quas odit, qui nesciunt quidem veniam eos alias repellat omnis molestiae quo similique explicabo provident consequatur. Exercitationem.</div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var toggleContent = function(toShow){
+        toShow = toShow || document.querySelector('#intro');
+        var contentBlocks = document.querySelectorAll('.page');
+        contentBlocks.forEach(function(block){
+          block.style.display = block === toShow ? 'block' : 'none';
+        });
+      };
+
+      toggleContent();
+
+
+      var links = document.querySelectorAll('.links a');
+      var line = document.querySelector('.line');
+      links.forEach(function(link){
+        link.addEventListener('click', function(){
+          var currentSection = {
+            href: this.getAttribute('href'),
+            width: this.parentElement.clientWidth,
+            position: this.parentElement.offsetLeft - this.parentElement.parentElement.offsetLeft,
+            padding: {
+              left: parseInt(window.getComputedStyle(this.parentElement).paddingLeft),
+              right: parseInt(window.getComputedStyle(this.parentElement).paddingRight)
+            },
+            contentWidth: function(){
+              return this.width - (this.padding.left + this.padding.right) + "px";
+            },
+            contentPosition: function(){
+              return this.position + this.padding.left + "px";
+            }
+          }
+          line.style.width = currentSection.contentWidth();
+          line.style.left = currentSection.contentPosition();
+          toggleContent(document.querySelector(currentSection.href));
+        })
+      });
+    })();
+  </script>
+</body>
+</html>
