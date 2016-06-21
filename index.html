@@ -90,14 +90,35 @@ vertical-align: baseline;
       text-align: center;
     }
     #skills ul li{
-      display: inline;
-      padding:25px;
+      display: inline-block;
+      padding:40px;
+      margin-bottom: 20px;
     }
     #skills ul li img{
       vertical-align: middle;
 
-      width: 15%;
-      height: 15%;
+      /*width: 15%;
+      height: 15%;*/
+    }
+    #projects ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    #projects ul li{
+      display:inline-block;
+      margin: 0 25px;
+      text-align: center;
+    }
+
+    #projects img{
+      width: 150px;
+      height: 150px;
+    }
+    .project{
+      width: 150px;
+      height: 250px;
     }
     .jumbotron .container .social{
       position: absolute;
@@ -125,11 +146,12 @@ vertical-align: baseline;
       padding: 20px;
     }
     #projects{
-      background-color: rgb(91, 138, 116);
-      color: #eceaea;
+      /*background-color: rgb(109, 157, 103);*/
+      /*color: #eceaea;*/
     }
     #projects p{
-      color: #eceaea;
+      /*color: #eceaea;*/
+      text-align: center;
     }
     @media(max-width:480px){
       .jumbotron{
@@ -182,9 +204,14 @@ vertical-align: baseline;
   <section class="info">
     <div class="container">
       <h2>Full stack developer</h2>
-      <p>Hi, i'm James and I do stuff with the web. I have a diverse range of skills from HTML, CSS and JavaScript to Angular, NodeJS and Linux administration. I am currently levelling up using the MEAN stack and also looking at expanding my portfolio. I hope to one day have a good time with code but meanwhile I will continue to work.</p>
-      <p> I love open source.</p>
-      <p>(and hedgehogs).</p>
+      <h3 style="text-align: center;">Hi, i'm James and I do stuff with the web.</h3>
+
+      <p>
+      I've always been interested in coding and design but it wasn't until last year that I started <a href="">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end giving me flexbility to develop full-stack applications.
+
+      I have previously worked for a successfull web hosting company which gifted me with the technical abilities of server administration.</p>
+      <br>
+      <h4 style="text-align: center;">I am 100% dedicated to learning more and improving skills around web dev.</h4>
     </div>
   </section>
 
@@ -193,13 +220,14 @@ vertical-align: baseline;
     <section class="page" id="skills">
       <div class="container">
       <h2>Skills</h2>
+      <h3 style="text-align: center;">These are some of the technologies I feel proficient using.</h3>
       <ul>
         <li><img src="img/html5.png" alt=""></li>
         <li><img src="img/css.png" alt=""></li>
         <li><img src="img/js.png" alt=""></li>
         <li><img src="img/jquery.gif" alt=""></li>
         <li><img src="img/angular.png" alt=""></li>
-        <li><img src="img/sass.png" alt=""></li>
+        <li><img src="img/git.png" alt=""></li>
         <li><img src="img/photoshop.png" alt=""></li>
         <li><img src="img/nodejs.png" alt=""></li>
         <li><img src="img/expressjs.png" alt=""></li>
@@ -210,12 +238,60 @@ vertical-align: baseline;
       </ul>
     </div>
   </section>
-    <section class="info" id="projects">
+    <section id="projects">
       <div class="container">
       <h2>Projects</h2>
-      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laudantium, aut natus repellendus itaque consequatur culpa enim aliquid eligendi iusto tempore sapiente atque rerum iste quisquam architecto quidem, dicta voluptatem.</span>
-      <span>Accusamus asperiores possimus itaque at error nihil aliquid distinctio totam, iusto recusandae hic expedita dolorum quo quidem fugiat, vitae ut ea corporis saepe eum! Quos quas, fugiat unde natus beatae.</span>
-      <span>Sunt temporibus dolore at nulla molestiae cupiditate, labore fuga omnis rerum provident quis odio ipsam nesciunt laboriosam hic, perspiciatis magni, vitae ut placeat mollitia vel. Omnis culpa corporis deserunt aspernatur!</span></p>
+      <ul>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>Angular Project</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>Online Bingo Fans</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>Quick API</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>SQL Tutor</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>SQL Injection</p>
+        </div>
+      </li>
+      <li>
+        <div class="project">
+          <img src="" alt="">
+          <p>Code Course</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>Jobs Board</p>
+        </div>
+      </li>
+        <li>
+          <div class="project">
+            <img src="" alt="">
+            <p>JS Fundamentals</p>
+        </div>
+      </li>
+      </ul>
+      <h3 style="text-align: center;">For more examples take a look at my <a href="">GitHub</a> account or work on <a href="">CodePen</a></h3>
     </section>
     </div>
     <section class="info" id="blog">
