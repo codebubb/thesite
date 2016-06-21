@@ -25,8 +25,8 @@
 
   <section class="info">
     <div class="container">
-      <h2>Full stack developer</h2>
-      <h3 style="text-align: center;">Hi, i'm James and I do stuff with the web.</h3>
+			<h2 style="text-align: center;">Hi, i'm James and I do stuff with the web.</h2>
+
       <p>
         I've always been interested in coding and design but it wasn't until last year that I started <a href="">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end giving me flexbility to develop full-stack applications.
 
@@ -121,12 +121,9 @@
 	while ( have_posts() ) : the_post();
 		?><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 		<?php
-		// the_content();
-		// Include the page content template.
-		// get_template_part( 'template-parts/content', 'page' );
 		the_excerpt();
-		// If comments are open or we have at least one comment, load up the comment template.
-		echo get_comments_number() ?> comments<?php
+		?>Posted in: <?php the_category(',');
+		echo "<br>" . get_comments_number() ?> comments<?php
 
 		// End of the loop.
 	endwhile;
