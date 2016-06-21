@@ -15,7 +15,7 @@
 while ( have_posts() ) : the_post();
 ?><h1><?php the_title();?></h1>
 <?php
-the_content();
+the_content(null, true);
 // Include the page content template.
 // get_template_part( 'template-parts/content', 'page' );
 
