@@ -6,6 +6,9 @@
   <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body{
       font-family: 'EB Garamond', garamond, serif;
       font-size: 1.3em;
@@ -31,7 +34,7 @@
 
     .container{
       max-width: 1024px;
-      padding: 0px 20px 20px 20px;
+      padding: 20px 20px 20px 20px;
       margin: 0 auto;
     }
     .jumbotron .container{
@@ -110,7 +113,23 @@ vertical-align: baseline;
     }
     h2{
       text-align: center;
+      margin-top: 0;
+    }
+    footer{
+      background-color: #c9c8c8;
 
+    }
+
+    footer p{
+      margin: 0;
+      padding: 20px;
+    }
+    #projects{
+      background-color: rgb(91, 138, 116);
+      color: #eceaea;
+    }
+    #projects p{
+      color: #eceaea;
     }
     @media(max-width:480px){
       .jumbotron{
@@ -120,7 +139,7 @@ vertical-align: baseline;
         padding-top: 5px;
       }
       .container{
-        padding-top: 5px;
+        padding-top: 20px;
       }
       .social{
         position: relative;
@@ -132,6 +151,12 @@ vertical-align: baseline;
       }
       .info p{
         column-count: 1;
+      }
+      #skills ul li{
+        display: block;
+      }
+      #skills ul li img{
+        width: 50%;
       }
     }
     .jumbotron h3{
@@ -179,6 +204,8 @@ vertical-align: baseline;
         <li><img src="img/nodejs.png" alt=""></li>
         <li><img src="img/expressjs.png" alt=""></li>
         <li><img src="img/mongodb.jpeg" alt=""></li>
+        <li><img src="img/php.png" alt=""></li>
+        <li><img src="img/mysql.png" alt=""></li>
 
       </ul>
     </div>
@@ -200,6 +227,11 @@ vertical-align: baseline;
     </div>
   </section>
   </div>
+  <footer>
+    <div class="container">
+      <p>&copy; James Bubb 2016</p>
+    </div>
+  </footer>
   <script>
     (function(){
       var toggleContent = function(toShow){
