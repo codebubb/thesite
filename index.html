@@ -4,348 +4,127 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body{
-      font-family: 'EB Garamond', garamond, serif;
-      font-size: 1.3em;
-      margin: 0;
-      padding: 0;
-    }
-    h1{
-      font-size: 2em;
-    }
-
-
-
-    .jumbotron{
-      height: 700px;
-      background-image: url(img/hedgehog.jpg);
-      background-size: cover;
-      background-position: left center;
-      background-repeat: no-repeat;
-    }
-
-
-
-
-    .container{
-      max-width: 1024px;
-      padding: 20px 20px 20px 20px;
-      margin: 0 auto;
-    }
-    .jumbotron .container{
-      position: relative;
-      padding-top: 60px;
-    }
-    .social img{
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-    ul.links{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    ul.links li{
-      font-size: 1.4em;
-      display:inline-block;
-      padding: 0 30px;
-    }
-    ul.links .line{
-      border-bottom: 2px solid black;
-      display: block;
-      width: 0;
-      margin-top: 5px;
-      position: relative;
-      padding: 0;
-      transition: all .6s ease;
-    }
-    h1{ margin: 0;
-    }
-    header{
-      /*position: fixed;*/
-    }
-
-    .links{
-      float: right;
-vertical-align: baseline;
-    }
-    a{
-      color: rgb(64, 64, 64);
-      text-decoration: none;
-    }
-    a:hover{
-      color: rgb(84, 84, 84);
-    }
-
-    #skills ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    #skills ul li{
-      display: inline-block;
-      padding:40px;
-      margin-bottom: 20px;
-    }
-    #skills ul li img{
-      vertical-align: middle;
-
-      /*width: 15%;
-      height: 15%;*/
-    }
-    #projects ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    #projects ul li{
-      display:inline-block;
-      margin: 0 25px;
-      text-align: center;
-    }
-
-    #projects img{
-      width: 150px;
-      height: 150px;
-    }
-    .project{
-      width: 150px;
-      height: 250px;
-    }
-    .jumbotron .container .social{
-      position: absolute;
-      top: 60px;
-      right: 20px;
-    }
-    .info p{
-      line-height: 1.5em;
-      margin: 0;
-      color: black;
-      column-count: 2;
-      column-gap: 40px;
-    }
-    h2{
-      text-align: center;
-      margin-top: 0;
-    }
-    footer{
-      background-color: #c9c8c8;
-
-    }
-
-    footer p{
-      margin: 0;
-      padding: 20px;
-    }
-    #projects{
-      /*background-color: rgb(109, 157, 103);*/
-      /*color: #eceaea;*/
-    }
-    #projects p{
-      /*color: #eceaea;*/
-      text-align: center;
-    }
-    @media(max-width:480px){
-      .jumbotron{
-        height: 400px;
-      }
-      .jumbotron .container{
-        padding-top: 5px;
-      }
-      .container{
-        padding-top: 20px;
-      }
-      .social{
-        position: relative;
-        left: 20px;
-      }
-      .social img{
-        width: 35px;
-        height: 35px;
-      }
-      .info p{
-        column-count: 1;
-      }
-      #skills ul li{
-        display: block;
-      }
-      #skills ul li img{
-        width: 50%;
-      }
-    }
-    .jumbotron h3{
-      margin-top: 5%;
-    }
-  </style>
 </head>
 <body>
   <section class="jumbotron">
     <div class="container">
       <header>
 
-      <h1>James Bubb </h1>
+        <h1>James Bubb </h1>
 
-    <div class="social">
-      <a href="https://www.linkedin.com/in/james-bubb-40753142"><img src="img/sm/Linkedin.png" alt=""></a>
-      <a href="https://github.com/codebubb"><img src="img/sm/Github.png" alt=""></a>
-      <a href="https://twitter.com/codebubb"><img src="img/sm/Twitter.png" alt=""></a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/james-bubb-40753142"><img src="img/sm/Linkedin.png" alt=""></a>
+          <a href="https://github.com/codebubb"><img src="img/sm/Github.png" alt=""></a>
+          <a href="https://twitter.com/codebubb"><img src="img/sm/Twitter.png" alt=""></a>
+        </div>
+      </header>
     </div>
-    </header>
-  </div>
   </section>
+
   <section class="info">
     <div class="container">
       <h2>Full stack developer</h2>
       <h3 style="text-align: center;">Hi, i'm James and I do stuff with the web.</h3>
-
       <p>
-      I've always been interested in coding and design but it wasn't until last year that I started <a href="">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end giving me flexbility to develop full-stack applications.
+        I've always been interested in coding and design but it wasn't until last year that I started <a href="">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end giving me flexbility to develop full-stack applications.
 
-      I have previously worked for a successfull web hosting company which gifted me with the technical abilities of server administration.</p>
-      <br>
-      <h4 style="text-align: center;">I am 100% dedicated to learning more and improving skills around web dev.</h4>
-    </div>
-  </section>
-
-
+        I have previously worked for a successfull web hosting company which gifted me with the technical abilities of server administration.</p>
+        <br>
+        <h4 style="text-align: center;">I am 100% dedicated to learning more and improving skills around web dev.</h4>
+      </div>
+    </section>
 
     <section class="page" id="skills">
       <div class="container">
-      <h2>Skills</h2>
-      <h3 style="text-align: center;">These are some of the technologies I feel proficient using.</h3>
-      <ul>
-        <li><img src="img/html5.png" alt=""></li>
-        <li><img src="img/css.png" alt=""></li>
-        <li><img src="img/js.png" alt=""></li>
-        <li><img src="img/jquery.gif" alt=""></li>
-        <li><img src="img/angular.png" alt=""></li>
-        <li><img src="img/git.png" alt=""></li>
-        <li><img src="img/photoshop.png" alt=""></li>
-        <li><img src="img/nodejs.png" alt=""></li>
-        <li><img src="img/expressjs.png" alt=""></li>
-        <li><img src="img/mongodb.jpeg" alt=""></li>
-        <li><img src="img/php.png" alt=""></li>
-        <li><img src="img/mysql.png" alt=""></li>
+        <h2>Skills</h2>
+        <h3 style="text-align: center;">These are some of the technologies I feel proficient using.</h3>
+        <ul>
+          <li><img src="img/html5.png" alt=""></li>
+          <li><img src="img/css.png" alt=""></li>
+          <li><img src="img/js.png" alt=""></li>
+          <li><img src="img/jquery.gif" alt=""></li>
+          <li><img src="img/angular.png" alt=""></li>
+          <li><img src="img/git.png" alt=""></li>
+          <li><img src="img/photoshop.png" alt=""></li>
+          <li><img src="img/nodejs.png" alt=""></li>
+          <li><img src="img/expressjs.png" alt=""></li>
+          <li><img src="img/mongodb.jpeg" alt=""></li>
+          <li><img src="img/php.png" alt=""></li>
+          <li><img src="img/mysql.png" alt=""></li>
 
-      </ul>
-    </div>
-  </section>
+        </ul>
+      </div>
+    </section>
     <section id="projects">
       <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>Angular Project</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>Online Bingo Fans</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>Quick API</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>SQL Tutor</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>SQL Injection</p>
-        </div>
-      </li>
-      <li>
-        <div class="project">
-          <img src="" alt="">
-          <p>Code Course</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>Jobs Board</p>
-        </div>
-      </li>
-        <li>
-          <div class="project">
-            <img src="" alt="">
-            <p>JS Fundamentals</p>
-        </div>
-      </li>
-      </ul>
-      <h3 style="text-align: center;">For more examples take a look at my <a href="">GitHub</a> account or work on <a href="">CodePen</a></h3>
-    </section>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>Angular Project</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>Online Bingo Fans</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>Quick API</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>SQL Tutor</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>SQL Injection</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>Code Course</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>Jobs Board</p>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="" alt="">
+              <p>JS Fundamentals</p>
+            </div>
+          </li>
+        </ul>
+        <h3 style="text-align: center;">For more examples take a look at my <a href="">GitHub</a> account or work on <a href="">CodePen</a></h3>
+      </section>
     </div>
     <section class="info" id="blog">
       <div class="container">
-      <h2>Blog</h2>
-      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus harum molestiae cupiditate dolor fuga quas iusto deleniti quasi nesciunt reiciendis praesentium accusantium labore numquam saepe itaque porro animi, maxime suscipit!</span>
-      <span>Eaque numquam nulla ipsum deserunt delectus. Facilis neque iure, quas molestias distinctio possimus id, fuga mollitia ducimus aut voluptate, dolorum veniam eligendi? Pariatur error, quam dolore sequi quae quo officiis.</span>
-      <span>Sapiente laudantium, numquam quo, nulla error ducimus magni, libero quia architecto odit illum totam. Eaque laudantium dolor voluptatibus reprehenderit rerum illum rem cum, quae explicabo voluptas accusamus mollitia recusandae impedit.</span></p>
-    </div>
-  </section>
-  </div>
-  <footer>
-    <div class="container">
-      <p>&copy; James Bubb 2016</p>
-    </div>
-  </footer>
-  <script>
-    (function(){
-      var toggleContent = function(toShow){
-        toShow = toShow || document.querySelector('#intro');
-        var contentBlocks = document.querySelectorAll('.page');
-        contentBlocks.forEach(function(block){
-          block.style.display = block === toShow ? 'block' : 'none';
-        });
-      };
-
-      // toggleContent();
-
-
-      var links = document.querySelectorAll('.links a');
-      var line = document.querySelector('.line');
-      links.forEach(function(link){
-        link.addEventListener('click', function(){
-          var currentSection = {
-            href: this.getAttribute('href'),
-            width: this.parentElement.clientWidth,
-            position: this.parentElement.offsetLeft - this.parentElement.parentElement.offsetLeft,
-            padding: {
-              left: parseInt(window.getComputedStyle(this.parentElement).paddingLeft),
-              right: parseInt(window.getComputedStyle(this.parentElement).paddingRight)
-            },
-            contentWidth: function(){
-              return this.width - (this.padding.left + this.padding.right) + "px";
-            },
-            contentPosition: function(){
-              return this.position + this.padding.left + "px";
-            }
-          }
-          line.style.width = currentSection.contentWidth();
-          line.style.left = currentSection.contentPosition();
-          toggleContent(document.querySelector(currentSection.href));
-        })
-      });
-    })();
-  </script>
-</body>
-</html>
+        <h2>Blog</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus harum molestiae cupiditate dolor fuga quas iusto deleniti quasi nesciunt reiciendis praesentium accusantium labore numquam saepe itaque porro animi, maxime suscipit!</span>
+          <span>Eaque numquam nulla ipsum deserunt delectus. Facilis neque iure, quas molestias distinctio possimus id, fuga mollitia ducimus aut voluptate, dolorum veniam eligendi? Pariatur error, quam dolore sequi quae quo officiis.</span>
+          <span>Sapiente laudantium, numquam quo, nulla error ducimus magni, libero quia architecto odit illum totam. Eaque laudantium dolor voluptatibus reprehenderit rerum illum rem cum, quae explicabo voluptas accusamus mollitia recusandae impedit.</span></p>
+        </div>
+      </section>
+    <footer>
+      <div class="container">
+        <p>&copy; James Bubb 2016</p>
+      </div>
+    </footer>
+  </body>
+  </html>
