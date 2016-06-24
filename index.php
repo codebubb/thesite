@@ -75,7 +75,7 @@
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.jpg" alt="">
               <p>Quick API</p>
             </div>
           </li>
@@ -87,7 +87,7 @@
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.jpg" alt="">
               <p>SQL Injection</p>
             </div>
           </li>
@@ -99,7 +99,7 @@
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/itjobs.jpg" alt="">
               <p>Jobs Board</p>
             </div>
           </li>
