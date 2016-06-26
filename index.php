@@ -45,14 +45,19 @@
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/css.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/js.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/jquery.gif" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/git.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/photoshop.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/nodejs.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/git.png" alt=""></li>
+        </li>
+        <h3>These are some things I have some experience with.</h3>
+        <ul>
+          
+        <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/photoshop.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/expressjs.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/mongodb.jpeg" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/php.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/mysql.png" alt=""></li>
+        </li>
 
         </ul>
       </div>
