@@ -93,6 +93,9 @@ a:hover{
   /*width: 15%;
   height: 15%;*/
 }
+#projects{
+  background-color: rgb(96, 128, 103);
+}
 #projects ul{
   list-style-type: none;
   margin: 0;

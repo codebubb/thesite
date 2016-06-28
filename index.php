@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>James Bubb | Does stuff with the web</title>
   <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,13 @@
       <header>
 
         <h1>James Bubb </h1>
-
+        <ul>
+          <li><a class="scrollTo" href="#info">About</a></li>
+          <li><a class="scrollTo" href="#skills">Skills</a></li>
+          <li><a class="scrollTo" href="#projects">Projects</a></li>
+          <li><a class="scrollTo" href="#blog">Blog</a></li>
+          <li><a class="scrollTo" href="#contact">Contact</a></li>
+        </ul>
         <div class="social">
           <a href="https://www.linkedin.com/in/james-bubb-40753142"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/Linkedin.png" alt=""></a>
           <a href="https://github.com/codebubb"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/Github.png" alt=""></a>
@@ -23,7 +29,7 @@
     </div>
   </section>
 
-  <section class="info">
+  <section id="info" class="info">
     <div class="container">
 			<h2 style="text-align: center;">Hi, i'm James and I do stuff with the web.</h2>
 
@@ -50,15 +56,18 @@
         </li>
         <h3>These are some things I have some experience with.</h3>
         <ul>
-
-        <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/photoshop.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/expressjs.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/mongodb.jpeg" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/php.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/mysql.png" alt=""></li>
         </li>
-
+        </ul>
+        <h3>And these are some things i'm currently learning.</h3>
+        <ul>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/android.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/gulp.png" alt=""></li>
         </ul>
       </div>
     </section>
@@ -140,5 +149,22 @@
         <p>&copy; James Bubb 2016</p>
       </div>
     </footer>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      var socialIcons = document.querySelector('.social');
+      window.addEventListener('scroll', function(e){
+        var pagePosition = e.pageY;
+        socialIcons.style.top = pagePosition> 60 ? pagePosition + 60 + "px" :  "60px";
+        socialIcons.style.opacity = pagePosition > 60 ? 0.75 : 1;
+      });
+
+      $('.scrollTo').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $(this.getAttribute('href')).offset().top }, 1000);
+      });
+    })
+
+    </script>
   </body>
   </html>
