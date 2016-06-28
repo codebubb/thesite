@@ -5,6 +5,8 @@
   <title>James Bubb | Does stuff with the web</title>
   <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -95,20 +97,8 @@
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
-              <p>SQL Tutor</p>
-            </div>
-          </li>
-          <li>
-            <div class="project">
               <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.png" alt="">
               <p>SQL Injection</p>
-            </div>
-          </li>
-          <li>
-            <div class="project">
-              <img src="" alt="">
-              <p>Code Course</p>
             </div>
           </li>
           <li>
@@ -163,7 +153,9 @@
         e.preventDefault();
         $('html, body').animate({scrollTop: $(this.getAttribute('href')).offset().top }, 1000);
       });
-    })
+  
+
+    });
 
     </script>
   </body>
