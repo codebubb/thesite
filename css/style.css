@@ -109,7 +109,7 @@ a:hover{
 #projects img{
   background-color: green;
   -mox-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.58);
-  width: 150px;
+  width: 250px;
   height: 150px;
 }
 .project{

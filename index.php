@@ -50,7 +50,7 @@
         </li>
         <h3>These are some things I have some experience with.</h3>
         <ul>
-          
+
         <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/photoshop.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/expressjs.png" alt=""></li>
@@ -74,13 +74,13 @@
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/onlinebingofans.png" alt="">
               <p>Online Bingo Fans</p>
             </div>
           </li>
           <li>
             <div class="project">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.png" alt="">
               <p>Quick API</p>
             </div>
           </li>
@@ -92,7 +92,7 @@
           </li>
           <li>
             <div class="project">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.png" alt="">
               <p>SQL Injection</p>
             </div>
           </li>
@@ -104,13 +104,13 @@
           </li>
           <li>
             <div class="project">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/itjobs.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/itjobs.png" alt="">
               <p>Jobs Board</p>
             </div>
           </li>
           <li>
             <div class="project">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/jsfundamentals.png" alt="">
               <p>JS Fundamentals</p>
             </div>
           </li>
