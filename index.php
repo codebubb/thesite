@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <section class="jumbotron">
+  <section id="jumbotron">
     <div class="container">
       <header>
 
@@ -49,27 +49,28 @@
         <h2>Skills<hr></h2>
 
         <h3 style="text-align: center;">These are some technologies I feel pretty confident using.</h3>
-        <ul>
+        <ul class="skill-list">
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/html5.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/css.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/css3.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/js.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/jquery.gif" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/bootstrap.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/jquery.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/nodejs.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/git.png" alt=""></li>
-        </li>
+        </ul>
         <h3>And these are some I have experience with (but i'm not an expert).</h3>
-        <ul>
+        <ul class="skill-list">
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/photoshop.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/expressjs.png" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/express.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/rails.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/mongodb.jpeg" alt=""></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/img/mongodb.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/php.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/mysql.png" alt=""></li>
-        </li>
+        </ul>
         </ul>
         <h3>Finally, this is what i'm currently learning.</h3>
-        <ul>
+        <ul class="skill-list">
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/android.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/react.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/gulp.png" alt=""></li>

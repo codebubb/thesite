@@ -1,19 +1,49 @@
+/*
+  Global Styles
+  -------------
+*/
+
 * {
   box-sizing: border-box;
 }
+
 body{
   font-family: 'Droid Serif', serif;
   font-size: 1.3em;
   margin: 0;
   padding: 0;
 }
+
 h1{
   font-size: 2em;
+  margin: 0;
 }
 
+h2, h3{
+  text-align: center;
+}
 
+a{
+  color: #4b4a4a;
+  text-decoration: none;
+}
+a:hover{
+  color: #3c3a3a;
+  text-decoration: underline;;
+}
 
-.jumbotron{
+.container{
+  max-width: 1140px;
+  /*padding: 20px 20px 20px 20px;*/
+  margin: 0 auto;
+padding: 50px 0;
+}
+
+/*
+  Section styles
+*/
+
+#jumbotron{
   height: 600px;
   background-image: url(img/hedgehog.jpg);
   background-size: cover;
@@ -21,46 +51,8 @@ h1{
   background-repeat: no-repeat;
 }
 
-
-
-
-.container{
-  max-width: 1140px;
-  /*padding: 20px 20px 20px 20px;*/
-  margin: 0 auto;
-}
-.jumbotron .container{
-  position: relative;
+#jumbotron .container{
   padding-top: 60px;
-}
-.social img{
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-ul.links{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ul.links li{
-  font-size: 1.4em;
-  display:inline-block;
-  padding: 0 30px;
-}
-ul.links .line{
-  border-bottom: 2px solid black;
-  display: block;
-  width: 0;
-  margin-top: 5px;
-  position: relative;
-  padding: 0;
-  transition: all .6s ease;
-}
-h1{ margin: 0;
-}
-header{
-  /*position: fixed;*/
 }
 
 header ul{
@@ -68,41 +60,53 @@ header ul{
   padding: 0;
 }
 
-.links{
-  float: right;
-vertical-align: baseline;
+.social img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
-a{
-  color: #4b4a4a;
-  text-decoration: none;
-}
-a:hover{
-  color: #3c3a3a;
-  text-decoration: underline;
-}
-#skills{
 
+/*
+  Skills section
+  --------------
+*/
+
+#skills{
+  background-image: url(img/code.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eceaea;
 }
-#skills ul{
+
+#skills .skill-list{
   list-style-type: none;
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
   text-align: center;
 }
-#skills ul li{
+
+#skills .skill-list li{
   display: inline-block;
-  padding:40px;
+  width: 25%;
   margin-bottom: 20px;
 }
-#skills ul li img{
-  vertical-align: middle;
 
-  /*width: 15%;
-  height: 15%;*/
+#skills .skill-list li img{
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+  transition: all 1s ease;
 }
+
+#skills .skill-list li img:hover{
+  transform: rotate(360deg);
+}
+
 #projects{
-  background-color: #D2CBB9;
-  padding: 50px 0;
+  /*background-color: #D2CBB9;*/
+
 }
 #projects p{
   /*color: #eceaea;*/
@@ -163,7 +167,9 @@ a:hover{
 
 .back{
   transform: rotateY(180deg);
-  background-color: rgba(255,255,255,0.75);
+  background-color: #D2CBB9;
+
+  /*background-color: rgba(255,255,255,0.75);*/
 }
 
 
@@ -225,12 +231,9 @@ footer p{
   .info p{
     column-count: 1;
   }
-  #skills ul li{
+  #skills .skill-list li{
     display: block;
-  }
-  #skills ul li img{
-    width: 50%;
-  }
+    width: 100%;
 }
 .jumbotron h3{
   margin-top: 5%;
