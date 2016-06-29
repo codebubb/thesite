@@ -50,14 +50,51 @@
 
         <h3 style="text-align: center;">These are some technologies I feel pretty confident using.</h3>
         <ul class="skill-list">
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/html5.png" alt=""></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/img/css3.png" alt=""></li>
+          <li>
+            <div class="skill-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/html5.png" alt="">
+                </div>
+                <div class="back">
+                  <p>I believe writing good semantic HTML is the foundation of an engaging and effective website.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/css3.png" alt="">
+                </div>
+                <div class="back">
+                  <p>I like to use SASS to pre-process CSS markup.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/js.png" alt="">
+                </div>
+                <div class="back">
+                  <p>I use BDD to test controllers, module and units within the browser or NodeJS</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+      <!--     <li><img src="<?php echo get_template_directory_uri(); ?>/img/css3.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/js.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/bootstrap.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/jquery.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/nodejs.png" alt=""></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/git.png" alt=""></li>
-        </ul>
+    -->     </ul>
         <h3>And these are some I have experience with (but i'm not an expert).</h3>
         <ul class="skill-list">
           <li><img src="<?php echo get_template_directory_uri(); ?>/img/angular.png" alt=""></li>
@@ -84,90 +121,70 @@
         <ul>
           <li>
             <h3>Dad belly</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/dadbelly.png" alt="">
-                </div>
-                <div class="back">
-                </div>
-              </div>
-            </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/dadbelly.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>An app for dads to track and lose weight</p>  
+                       <a href="#" class="info">Visit Site</a>  
+                   </div>  
+              </div>  
+                           
           </li>
           <li>
             <h3>Online Bingo Fans</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/onlinebingofans.png" alt="">
-                </div>
-                <div class="back">
-                  <p>
-                    Bingo fans every will be delighted!
-                  </p>
-                </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/onlinebingofans.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>Finds the latest bingo deals</p>  
+                       <a href="#" class="info">Visit Site</a>  
+                   </div>  
               </div>
-            </div>
           </li>
           <li>
             <h3>Quick API</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.png" alt="">
-                </div>
-                <div class="back">
-                  <p>
-                    A quick api
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>Generate an API quickly directly from an SQLite database</p>  
+                       <a href="#" class="info">View GitHub Repo</a>  
+                   </div>  
+              </div>  
           </li>
           <li>
             <h3>SQL Injection Challenge</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.png" alt="">
-                </div>
-                <div class="back">
-                  <p>
-                    SQL Injection
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/sqlinjection.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>Practice SQL injection techniques on a simple login page</p>  
+                       <a href="#" class="info">View GitHub Repo</a>  
+                   </div>  
+              </div>  
           </li>
           <li>
             <h3>IT Jobs Board</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/itjobs.png" alt="">
-                </div>
-                <div class="back">
-                  <p>
-                    An IT Jobs board
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/itjobs.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>A simple job posting app built with Rails.</p>  
+                       <a href="#" class="info">Visit Site</a>  
+                   </div>  
+              </div>  
           </li>
           <li>
             <h3>JS Fundamentals</h3>
-            <div class="project-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/projects/jsfundamentals.png" alt="">
-                </div>
-                <div class="back">
-                  <p>
-                    JS Fundamentals
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/jsfundamentals.png" alt="">
+              <div class="mask">  
+                   <!-- <h3>Dad Belly</h3> -->  
+                   <p>An online presentation for learning the basics of JavaScript</p>  
+                       <a href="#" class="info">Visit Site</a>  
+                   </div>  
+              </div>  
           </li>
         </ul>
         <h3 style="text-align: center;">For more examples take a look at my <a href="">GitHub</a> account.</h3>
