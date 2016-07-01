@@ -80,6 +80,7 @@ header ul{
   background-size: cover;
   background-repeat: no-repeat;
   color: #eceaea;
+  text-align: center;
 }
 
 #skills .skill-list{
