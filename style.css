@@ -83,6 +83,10 @@ header ul{
   text-align: center;
 }
 
+#skills a{
+  color: white;
+}
+
 #skills .skill-list{
   list-style-type: none;
   margin: 0;
