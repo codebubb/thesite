@@ -371,10 +371,14 @@ footer p{
   }
   #skills .skill-list li{
     display: block;
-    text-align: center;
-    width: 100%;
+    margin: 0 auto;
+
 }
   .view{
+    width: 260px;
+    height: 185px;
+  }
+  .view .mask, .view .content{
     width: 260px;
     height: 185px;
   }
