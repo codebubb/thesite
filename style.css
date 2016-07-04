@@ -285,7 +285,7 @@ header ul{
 }
 
 
-#jumbotron .container .social{
+.container .social{
   position: absolute;
   transition: all .6s ease;
   top: 60px;
@@ -303,6 +303,11 @@ header ul{
 
 #blog a, #blog h2{
   color: #eceaea;
+}
+
+.post h3{
+  text-align: left;
+  margin: 40px 0;
 }
 
 .underline{

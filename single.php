@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <title>James Bubb | Does stuff with the web</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<section id="blog">
+  <div class="container">
+    <header>
+
+      <h1>James Bubb </h1>
+
+      <div class="social">
+        <a href="mailto:contact@jamesbubb.co.uk"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/email.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/james-bubb-40753142"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/Linkedin.png" alt=""></a>
+        <a href="https://github.com/codebubb"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/Github.png" alt=""></a>
+        <a href="https://twitter.com/codebubb"><img src="<?php echo get_template_directory_uri(); ?>/img/sm/Twitter.png" alt=""></a>
+      </div>
+  </div>
+    </header>
+<section class="post">
   <div class="container">
     <?php
 // Start the loop.
