@@ -371,7 +371,7 @@ footer p{
   }
   #skills .skill-list li{
     display: block;
-    margin: 0 auto;
+    padding-left: 80px;
 
 }
   .view{
