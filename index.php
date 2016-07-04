@@ -37,9 +37,9 @@
 			<h2 style="text-align: center;">Hi, i'm James and I do stuff with the web.<hr></h2>
 
       <p>
-        I've always been interested in coding but it wasn't until last year when I started <a href="http://freecodecamp.com/codebubb">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end giving me flexbility to develop full-stack applications.
+        I've always been interested in coding but it wasn't until last year when I started <a href="http://freecodecamp.com/codebubb">FreeCodeCamp</a> that my passion for development was ignited. Since then i've worked hard to develop a robust set of <a href="#skills">skills</a> that allow me to work both front and back end, giving me flexbility to develop full-stack applications.
 
-        In my current role I work with apprentices, teaching them the the fundamenals of programming.  I have also previously worked within a successful support team for a professional web hosting company which allowed me to develop a keen problem solving mindset.</p>
+        In my current role I work with apprentices, teaching them the the fundamentals of programming.  I have also previously worked within a successful support team for a professional web hosting company which allowed me to develop a keen problem solving mindset.</p>
         <br>
         <h3 >I am 100% dedicated to developing new skills, perfecting my talents and becoming a top-class full-stack developer.</h3>
       </div>
@@ -106,7 +106,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/jquery.png" alt="">
                 </div>
                 <div class="back">
-                  <p>I like the way jQuery makes XHR easy to implement. I try and avoid using jQuery in a projec if it is just for CSS selectors.</p>
+                  <p>I like the way jQuery makes XHR easy to implement. I try and avoid it however if it is just needed for CSS selectors.</p>
                 </div>
               </div>
             </div>
@@ -154,7 +154,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/mysql.png" alt="">
                 </div>
                 <div class="back">
-                  <p>I find that it's good to know the SQL statements that your ORM is using and MySQL/MariaDB is a good product to learn from.</p>
+                  <p>I find that it's good to know the SQL statements that your ORM is using and MySQL/MariaDB is good to learn from.</p>
                 </div>
               </div>
             </div>
@@ -270,32 +270,32 @@
         <h2>Projects</h2>
         <ul>
           <li>
+            <h3>Online Bingo Fans</h3>
+            <div class="view view-third">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/onlinebingofans.png" alt="Online Bingo Fans">
+              <div class="mask">
+                   <p>Allows users to browse and search through an aggregated list of promotions from several different online bingo sites.</p>
+                       <a href="http://onlinebingofans.co.uk" class="info">Visit Site</a>
+                   </div>
+              </div>
+          </li>
+          <li>
             <h3>Dad belly</h3>
             <div class="view view-third">
               <img src="<?php echo get_template_directory_uri(); ?>/img/projects/dadbelly.png" alt="Dad Belly">
               <div class="mask">
-                   <p>An app writen using the MEAN stack for dads to count calories and track their weight loss.</p>
+                   <p>An app writen using the MEAN stack for dads to count calories and track their weight loss. (A bit of a work in progress).</p>
                        <a href="http://dadbelly.com" class="info">Visit Site</a>
                    </div>
               </div>
 
           </li>
           <li>
-            <h3>Online Bingo Fans</h3>
-            <div class="view view-third">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/projects/onlinebingofans.png" alt="Online Bingo Fans">
-              <div class="mask">
-                   <p>Allows users to browse and search through an aggregated list of promotions from several different online bingo sites.</p>
-                       <a href="https://onlinebingofans.co.uk" class="info">Visit Site</a>
-                   </div>
-              </div>
-          </li>
-          <li>
             <h3>Quick API</h3>
             <div class="view view-third">
               <img src="<?php echo get_template_directory_uri(); ?>/img/projects/quickapi.png" alt="Quick API">
               <div class="mask">
-                   <p>A developer's  tool that generates an API directly from an SQLite database for providing test data.</p>
+                   <p>A developer's tool that generates an API directly from an SQLite database for providing test data.</p>
                        <a href="https://github.com/codebubb/quickapi" class="info">View GitHub Repo</a>
                    </div>
               </div>
@@ -325,8 +325,8 @@
             <div class="view view-third">
               <img src="<?php echo get_template_directory_uri(); ?>/img/projects/jsfundamentals.png" alt="JavaScript fundamentals">
               <div class="mask">
-                <p>An online presentation for learning the basics of JavaScript.  Written using the Reveal.js presentation framework.</p>
-                       <a href="https://codbubb.github.io" class="info">Visit Site</a>
+                <p>An online presentation for learning the basics of JavaScript.  Written using the <a href="http://lab.hakim.se/reveal-js/#/">Reveal.js</a> presentation framework.</p>
+                       <a href="https://codebubb.github.io" class="info">Visit Site</a>
                    </div>
               </div>
           </li>
@@ -336,7 +336,7 @@
     </div>
     <section id="blog">
       <div class="container">
-				<h2>Blog  <hr></h2>
+				<h2>Recent blog posts<hr></h2>
 
 				<?php
 	// Start the loop.
@@ -354,7 +354,7 @@
       </section>
     <footer>
       <div class="container">
-        <p>Android logo courtesy of Google Inc.<br/> React logo courtesty of Facebook</p>
+        <p>Android logo courtesy of Google Inc.<br/> React logo courtesy of Facebook</p>
         <p>All other work: James Bubb 2016</p>
       </div>
     </footer>
