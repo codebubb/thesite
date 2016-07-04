@@ -353,14 +353,13 @@ footer p{
     height: 400px;
   }
   .jumbotron .container{
-    padding-top: 5px;
+    padding-top: 0px;
   }
   .container{
     padding-top: 20px;
   }
-  .social{
+  .container .social{
     position: relative;
-    left: 20px;
   }
   .social img{
     width: 35px;
@@ -372,8 +371,14 @@ footer p{
   }
   #skills .skill-list li{
     display: block;
+    text-align: center;
     width: 100%;
 }
-.jumbotron h3{
-  margin-top: 5%;
+  .view{
+    width: 260px;
+    height: 185px;
+  }
+  .jumbotron h3{
+    margin-top: 5%;
+  }
 }
