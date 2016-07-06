@@ -223,7 +223,7 @@
             </div>
           </li>
         </ul>
-        <h3>Finally, this is what I have plan to focus on in the future.</h3>
+        <h3>Finally, this is what I plan to focus on in the near future.</h3>
         <ul class="skill-list">
           <li>
             <div class="skill-container">
