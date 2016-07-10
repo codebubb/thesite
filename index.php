@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <section id="jumbotron">
+  <section id="jumbotron" class="parallax" data-speed="5">
     <div class="container">
       <header>
 
@@ -366,6 +366,7 @@
         socialIcons.style.top = pagePosition> 60 ? pagePosition + 60 + "px" :  "60px";
         socialIcons.style.opacity = pagePosition > 60 ? 0.75 : 1;
       });
+
 
       $('.scrollTo').on('click', function(e){
         e.preventDefault();
