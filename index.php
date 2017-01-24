@@ -40,7 +40,8 @@
 
         In my current role I work with apprentices, teaching them the the fundamentals of programming.  I have also previously worked within a successful support team for a professional web hosting company which allowed me to develop a keen problem solving mindset.</p>
         <br>
-        <h3 >I am 100% dedicated to developing new skills, perfecting my talents and becoming a top-class full-stack developer.</h3>
+      </p>
+      <p>I have recently started a new project called <a href="https://www.juniordevelopercentral.com">Junior Developer Central</a> in order to help people learn to code and build websites.</p>
       </div>
     </section>
 
