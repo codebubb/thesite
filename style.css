@@ -52,6 +52,7 @@ padding: 20px 20px;
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #jumbotron .container{
@@ -69,6 +70,9 @@ header ul{
   margin-right: 5px;
 }
 
+#info{
+  z-index: 10;
+}
 /*
   Skills section
   --------------
